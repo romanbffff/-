@@ -8,11 +8,14 @@ header {
     display: flex;
 }
 .logo{
-    padding-left:30px;
-    font-family: Arial;
-    font-weight: bold;
-    font-size: 20px;
-    margin-top: -9px;
+    padding-left: 60px;
+    margin-top: 5px;
+    padding-right: 180px;
+}
+.logo img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
 
 .logo, .menu {
@@ -59,3 +62,11 @@ header {
 	font-family: Arial;
 	border: none;
 }
+/*-------------------------------------------------------*/
+/* INFORMATION
+/*-------------------------------------------------------*/
+
+.block-information {
+    padding-top: 20px;
+}
+
