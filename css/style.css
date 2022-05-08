@@ -6,6 +6,7 @@ header {
     margin-top: 10px;
     color: black;
     display: flex;
+    margin-bottom: 10px;
 }
 .logo{
     padding-left: 60px;
@@ -39,6 +40,7 @@ header {
 
 }
 .menu a:hover{
+    padding-bottom: 7px;
 	border-bottom:3px solid #fcac45;
 }
 .menu ul{
@@ -47,7 +49,11 @@ header {
 }
 .login a:hover{
 	border-bottom:none;
-	color: white;
+	color: black;
+    background: white;
+    box-shadow: inset 0 0 0 3px #F8981C;
+    opacity: 0.9;
+    transition: all 0.4s ease-out;
 }
 .login a{
 	border-bottom: none;
@@ -55,7 +61,7 @@ header {
 	padding: 15px 45px 15px 45px;
   color: black;
   box-shadow:  white;
-  background: #fcac45;
+  background: #F8981C;
 	border-radius: 30px;
 	font-weight: bold;
 	font-size: 25px;
@@ -68,10 +74,20 @@ header {
 
 
 .block-information {
+    color: #FFF;
+    background-color: #FD940A;
+    background-image: radial-gradient(circle, #F9A72B 0%, #FA9026 70%, #FB6C1F 100%);
     padding-top: 100px;
     padding-left: 100px;
     font-family: Arial;
     display: inline-flex;
+    margin-left: -10px;
+    width: 95.6%;
+}
+
+.block-information h1 {
+    font-size: 50px;
+    font-weight: bold;
 }
 
 .text_info {
@@ -79,18 +95,20 @@ header {
 }
 
 .text_info li {
-    color: #fcac45;
+    padding-bottom: 15px;
+    color: #B51411;
     font-size: 20px;
    }
 .text_info span {
-    color: black;
+    color: white;
    }
 
 
 .like img {
     margin-left: 300px;
-    margin-top: 30px;
+    margin-top: 0px;
+    margin-bottom: 35px;
     border-radius: 50px;
     width: 450px;
-    height: 410px;
+    height: 380px;
 }
