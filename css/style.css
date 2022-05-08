@@ -66,7 +66,31 @@ header {
 /* INFORMATION
 /*-------------------------------------------------------*/
 
+
 .block-information {
-    padding-top: 20px;
+    padding-top: 100px;
+    padding-left: 100px;
+    font-family: Arial;
+    display: inline-flex;
 }
 
+.text_info {
+    display: inline-block;
+}
+
+.text_info li {
+    color: #fcac45;
+    font-size: 20px;
+   }
+.text_info span {
+    color: black;
+   }
+
+
+.like img {
+    margin-left: 300px;
+    margin-top: 30px;
+    border-radius: 50px;
+    width: 450px;
+    height: 410px;
+}
