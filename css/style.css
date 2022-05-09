@@ -1,3 +1,4 @@
+@media screen and (min-width: 1200px) and (orientation: landscape) { 
 /*-------------------------------------------------------*/
 /* Navigation
 /*-------------------------------------------------------*/
@@ -8,26 +9,27 @@ body{
 overflow-x: hidden;
 }
 header {
-    padding-top: 8px;
+	width: 100%;
     color: black;
     display: flex;
-    padding-bottom: 2px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
 }
 
 .logo{
-    padding-left: 20px;
-    padding-right: 180px;
+    padding-left: 10px;
 }
 .logo img{
-	  margin-top: -12px;
-    width: 60px;
-    height: 60px;
+	margin-left: 20px;
+    width: 57px;
+    height: 57px;
     border-radius: 50%;
 }
 
 .logo, .menu {
-    vertical-align: middle;
     display: inline-block;
+    vertical-align: middle;
 }
 .menu a{
     cursor: pointer;
@@ -38,25 +40,21 @@ header {
 
 }
 .menu li {
-    padding-left: 80px;
-    margin-right: 20px;
-    display: inline-block;
-    vertical-align: middle;
-
+    padding-left: 60px;
+    margin-right: 60px;
+    display: inline-block;    
 }
 .menu a:hover{
 	border-bottom:3px solid #fcac45;
 	padding-bottom: 4px;
 }
 .menu ul{
+	  margin-left: 20px;
 	  text-align: center;
-	  margin-top: auto ;
-    margin-left: auto;
-
 }
 .login a:hover{
-	  border-bottom:none;
-	  color: black;
+	border-bottom:none;
+	color: black;
     background: white;
     box-shadow: inset 0 0 0 3px #F8981C;
     opacity: 0.9;
@@ -64,14 +62,14 @@ header {
 }
 .login a{
 	border-bottom: none;
-	margin-left: 300px;
-	padding: 15px 45px 15px 45px;
-  color: black;
-  box-shadow:  white;
-  background: #F8981C;
+	margin-left: 250px;
+	padding: 15px 50px 15px 50px;
+    color: black;
+    box-shadow:  white;
+    background: #F8981C;
 	border-radius: 30px;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 20px;
 	border: none;
 }
 /*-------------------------------------------------------*/
@@ -80,27 +78,27 @@ header {
 
 
 .block-information {
-	  padding: 0 20px 0 20px;
-	  background-size: cover;
+	display: flex;
+    justify-content: center;
     color: #FFF;
     background-color: #FD940A;
     background-image: radial-gradient(circle, #F9A72B 0%, #FA9026 70%, #FB6C1F 100%);
     background-size: auto auto;
     padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 15px;
-    display: flex;
 
 }
 
 .block-information h1 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     color: black;
 }
 
 .text_info {
-    display: inline-block;
-    
+    display: inline-block; 
+    margin-left: -100px;  
 }
 
 .text_info li {
@@ -114,10 +112,10 @@ header {
    }
 
 
-.like img {
-    margin-left: 100px;
+.gif img {
+    margin-left: 70px;
     margin-top: 15px;
-    margin-bottom: 35px;
+    margin-bottom: 10px;
     border-radius: 50px;
     width: 450px;
     height: 380px;
@@ -126,19 +124,21 @@ header {
 /* Test
 /*-------------------------------------------------------*/
 .Trenajer h1{
-	padding-top: 5px;
-	text-align: center;
-	font-size: 50px;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  font-size: 40px;
   font-weight: bold;
   color: black;
 }
 .gallery{
- margin-left: 260px;
- margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .gallery img {
-	cursor: pointer;
-	color: #FFF;
+  cursor: pointer;
+  color: #FFF;
   background-color: #FD940A;
   background-image: radial-gradient(circle, #F9A72B 0%, #FA9026 70%, #FB6C1F 100%);
   border-radius: 20px;
@@ -147,154 +147,30 @@ header {
   justify-content: center;
   align-content: space-between;
   align-items: center;
-  padding: 40px;
-  margin: 15px; 
+  padding: 30px;
+  margin: 20px 20px 20px 20px;
+  
 }
 .gallery img:hover{
 	 
 	 transform: scale(1.05);
 	  transition: all 0.7s ease-in-out;
 }
-.line1{
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-width: auto;
 
-}
-.line2{
-
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-width: auto;
-
-
-}
-.line3{
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-width: auto;
-
-}
-.photo_one {
+.photo {
 	position: relative;
 }
 
-.photo_one span{
+.photo span{
 	position: absolute;
-  text-align: center;
+    text-align: center;
 	top: 20px ;
 	left: 25px;
 	right: 30px;
 	font-weight: bold;
 	font-size: 20px;
 }
-.photo_two {
-	position: relative;
-}
 
-.photo_two span{
-	position: absolute;
-  text-align: center;
-	top: 20px ;
-	left: 25px;
-	right: 30px;
-	font-weight: bold;
-	font-size: 20px;
-}
-.photo_three {
-	position: relative;
-}
-
-.photo_three span{
-	position: absolute;
-  text-align: center;
-	top: 20px ;
-	left: 25px;
-	right: 30px;
-	font-weight: bold;
-	font-size: 20px;
-}
-.photo_four {
-	position: relative;
-}
-
-.photo_four span{
-	position: absolute;
-  text-align: center;
-	top: 20px ;
-	left: 25px;
-	right: 30px;
-	font-weight: bold;
-	font-size: 20px;
-}
-.photo_five {
-	position: relative;
-}
-
-.photo_five span{
-	position: absolute;
-  text-align: center;
-	top: 20px ;
-	left: 25px;
-	right: 30px;
-	font-weight: bold;
-	font-size: 20px;
-}
-.photo_six {
-	position: relative;
-}
-
-.photo_six span{
-	position: absolute;
-  text-align: center;
-	top: 20px ;
-	left: 25px;
-	right: 30px;
-	font-weight: bold;
-	font-size: 20px;
-}
-.photo_seven {
-	position: relative;
-}
-
-.photo_seven span{
-	position: absolute;
-  text-align: center;
-	top: 20px ;
-	left: 25px;
-	right: 30px;
-	font-weight: bold;
-	font-size: 20px;
-}
-.photo_eight {
-	position: relative;
-}
-
-.photo_eight span{
-	position: absolute;
-  text-align: center;
-	top: 20px ;
-	left: 25px;
-	right: 30px;
-	font-weight: bold;
-	font-size: 20px;
-}
-.photo_nine {
-	position: relative;
-}
-
-.photo_nine span{
-	position: absolute;
-  text-align: center;
-	top: 20px ;
-	left: 25px;
-	right: 30px;
-	font-weight: bold;
-	font-size: 20px;
-}
 
 
 footer{
@@ -302,3 +178,4 @@ footer{
   text-align:center;
   
 }
+ }
