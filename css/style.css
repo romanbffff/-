@@ -22,7 +22,7 @@ header {
 }
 
 .logo{
-    padding-left: 10px;
+    padding-right: 0.5em;
 }
 .logo img{
 	margin-left: 20px;
@@ -40,12 +40,12 @@ header {
     text-decoration: none;
     color: black;
     vertical-align: middle;
-    font-size: 18px;
+    font-size: 1.2em;
 
 }
 .menu li {
-    padding-left: 60px;
-    margin-right: 60px;
+    padding-left: 2.7em;
+    margin-right: 2.7em;
     display: inline-block;    
 }
 .menu a:hover{
@@ -67,14 +67,14 @@ header {
 }
 .login a{
 	border-bottom: none;
-	margin-left: 250px;
+	margin-left: 120px;
 	padding: 15px 50px 15px 50px;
     color: white;
     box-shadow:  white;
     background: #F8981C;
 	border-radius: 30px;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 1.4em;
 	border: none;
 }
 /*-------------------------------------------------------*/
@@ -96,7 +96,7 @@ header {
 }
 
 .block-information h1 {
-    font-size: 40px;
+    font-size: 2.4em;
     font-weight: bold;
     color: black;
 }
@@ -109,7 +109,7 @@ header {
 .text_info li {
     padding-bottom: 10px;
     color: #B51411;
-    font-size: 25px;
+    font-size: 1.6em;
 
    }
 .text_info span {
@@ -131,7 +131,7 @@ header {
 .Trenajer h1{
   padding: 10px 0 10px 0;
   text-align: center;
-  font-size: 40px;
+  font-size: 2.4em;
   font-weight: bold;
   color: black;
 }
@@ -152,8 +152,8 @@ header {
   justify-content: center;
   align-content: space-between;
   align-items: center;
-  padding: 30px;
-  margin: 20px 20px 20px 20px;
+  padding: 2.1em;
+  margin: 0.9em;
   
 }
 .gallery img:hover{
@@ -173,7 +173,7 @@ header {
 	left: 25px;
 	right: 30px;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 1.4em;
 }
 
 
@@ -183,6 +183,7 @@ footer{
     border-radius: 50%;
     background-color: #F8981C;
     text-align:center;
+    font-size: 1em;
   
 }
 footer p {
