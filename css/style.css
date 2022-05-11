@@ -77,6 +77,9 @@ header {
 	font-size: 1.4em;
 	border: none;
 }
+.change-lang {
+   margin-left: 50px;
+}
 /*-------------------------------------------------------*/
 /* INFORMATION
 /*-------------------------------------------------------*/
@@ -118,7 +121,7 @@ header {
 
 
 .gif img {
-    margin-left: 70px;
+    margin-left: 150px;
     margin-top: 15px;
     margin-bottom: 10px;
     border-radius: 50px;
