@@ -48,6 +48,7 @@ var arrLang = {
 }
 
   // LoCaL storage
+  let lang;
   $(function() {
     if(localStorage.getItem('lang'))
     {
@@ -64,7 +65,7 @@ var arrLang = {
 function loadLanguage(){
     $('.lang').each(function() {
         if(arrLang[lang] == undefined)
-            lang = 'en';
+            lang = 'ua';
         $(this).text(arrLang[lang][$(this).attr('key')]);
     });
 }
