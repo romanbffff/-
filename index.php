@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,11 +24,24 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="index.html" class="lang" key="home">Головна</a></li>
+                    <li><a href="index.php" class="lang" key="home">Головна</a></li>
                     <li><a href="#" class="lang" key="contact">Контакти</a></li>
                     <li><a href="#Test" class="lang" key="simulator">Тренажер</a></li>
                     <li><a href="#" class="lang" key="shedule">Розклад</a></li>
-                    <li class="login"><a href="login.php" class="login lang" target="_blank" key="login">Вхід</a></li>
+					<?php
+                //Проверяем авторизован ли пользователь
+                if(!isset($_SESSION['email']) && !isset($_SESSION['password'])){
+					// Не авторизований - вивід кнопки - ВХІД
+            ?>
+			<li class="login"><a href="/php/Authorization/form_auth.php" class="login lang" target="_blank" key="login">Вхід</a></li>
+            <?php
+                }else{
+                    //Если пользователь авторизован, то выводим ссылку Выход
+            ?> 
+                    <li class="login"><a href="/php/Authorization/cab.php" class="login lang" key="logout">Особистий кабінет</a></li>
+            <?php
+                }
+            ?>
                     <li><a id="ua" class="translate">UA</a></li>
                     <li><a id="en" class="translate">EN</a></li>
                 </ul>
