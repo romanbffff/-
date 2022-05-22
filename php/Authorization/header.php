@@ -94,7 +94,7 @@
                 }else{
                     //Если пользователь авторизован, то выводим ссылку Выход
             ?> 
-                    <li class="login"><a href="/php/Authorization/logout.php" class="login lang" target="_blank" key="logout">Вихід</a></li>
+                    <li class="login"><a href="/php/Authorization/logout.php" class="login lang" key="logout">Вихід</a></li>
             <?php
                 }
             ?>
