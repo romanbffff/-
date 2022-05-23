@@ -34,6 +34,9 @@ var arrLang = {
       'name' : "Ім'я:",
       'surname' : "Прізвище:",
       'you-sign-up' : "Ви вже зареєстровані",
+      'persn-acc' : "JetIKy - Особистий кабінет",
+      'persn-sign-in' : "JetIKy - Авторизація",
+      'persn-sign-up' : "JetIKy - Реєстрація",
 	},
 	'en' : {
       'unit' : "JetIKy - We are better than Jet!",
@@ -70,6 +73,9 @@ var arrLang = {
       'name' : 'Name:',
       'surname' : "Surname:",
       'you-sign-up' : "You are already registered",
+      'persn-acc' : "JetIKy - Personal account",
+      'persn-sign-in' : "JetIKy - Sign-in",
+      'persn-sign-up' : "JetIKy - Sign-up",
 	}
 }
 

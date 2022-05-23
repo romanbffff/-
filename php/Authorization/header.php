@@ -5,7 +5,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>JetIKy</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="/css/style for account/styles.css">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
@@ -16,25 +15,25 @@
                 "use strict";
                 //================ Перевірка email ==================
          
-                //регулярное выражение для проверки email
+                //регулярний вираз для перевірки email
                 var pattern = /^[a-z0-9][a-z0-9\._-]*[a-z0-9]*@([a-z0-9]+([a-z0-9-]*[a-z0-9]+)*\.)+[a-z]+/i;
                 var mail = $('input[name=email]');
                  
                 mail.blur(function(){
                     if(mail.val() != ''){
          
-                        // Проверяем, если введенный email соответствует регулярному выражению
+                        // Перевіряємо, якщо введений email відповідає регулярному виразу
                         if(mail.val().search(pattern) == 0){
-                            // Убираем сообщение об ошибке
+                            //Забираємо повідомлення про помилку
                             $('#valid_email_message').text('');
          
-                            //Активируем кнопку отправки
+                            //Активуємо кнопку надсилання
                             $('input[type=submit]').attr('disabled', false);
                         }else{
-                            //Выводим сообщение об ошибке
+                            //Виводимо повідомлення про помилку
                             $('#valid_email_message').text('Not the correct Email');
          
-                            // Дезактивируем кнопку отправки
+                            // Деактивуємо кнопку відправлення
                             $('input[type=submit]').attr('disabled', true);
                         }
                     }else{
@@ -42,25 +41,25 @@
                     }
                 });
          
-                //================ Проверка длины пароля ==================
+                //================ Перевірка довжини пароля ==================
                 var password = $('input[name=password]');
                  
                 password.blur(function(){
                     if(password.val() != ''){
          
-                        //Если длина введенного пароля меньше шести символов, то выводим сообщение об ошибке
+                        //Якщо довжина введеного пароля менше шести символів, виводимо повідомлення про помилку
                         if(password.val().length < 6){
-                            //Выводим сообщение об ошибке
+                            //Виводимо повідомлення про помилку
                             $('#valid_password_message').text('The minimum password length is 6 characters');
          
-                            // Дезактивируем кнопку отправки
+                            // Деактивуємо кнопку відправлення
                             $('input[type=submit]').attr('disabled', true);
                              
                         }else{
-                            // Убираем сообщение об ошибке
+                            // Забираємо повідомлення про помилку
                             $('#valid_password_message').text('');
          
-                            //Активируем кнопку отправки
+                            //Активуємо кнопку надсилання
                             $('input[type=submit]').attr('disabled', false);
                         }
                     }else{
@@ -83,13 +82,13 @@
                     <li><a href="/index.php" class="lang" key="home">Головна</a></li>
                     <li><a href="#" class="lang" key="contact">Контакти</a></li>
             <?php
-                //Проверяем авторизован ли пользователь
+                //Перевіряємо чи авторизований користувач
                 if(!isset($_SESSION['email']) && !isset($_SESSION['password'])){
-                    // если нет, то выводим блок с ссылками на страницу регистрации и авторизации
+                    // якщо ні, то виводимо блок із посиланнями на сторінку реєстрації та авторизації
             ?>
             <?php
                 }else{
-                    //Если пользователь авторизован, то выводим ссылку Выход
+                    //Якщо користувач авторизований, то виводимо посилання Вихід
             ?> 
                     <li><a href="#" class="lang" key="shedule">Розклад</a></li>
                     <li class="login"><a href="/php/Authorization/logout.php" class="login lang" key="logout">Вихід</a></li>
@@ -104,4 +103,4 @@
         </div>
        </nav>
     </header>
-    <script src="/js/lang/translator-app.js"></script>
+<script src="/js/lang/translator-app.js"></script>

@@ -1,7 +1,12 @@
 <?php
     require_once("header.php");
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title class="lang" key="persn-acc">JetIKy - Особистий кабінет</title>
+    <meta charset="utf-8">
+</head>
+</html>
     <h1>ОБЛІКОВИЙ ЗАПИС</h1>
-<?php
-    require_once("footer.php");
-?>
+<footer class="footer"><p>JetIKy &copy; 2022</p></footer>

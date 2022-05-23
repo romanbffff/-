@@ -1,23 +1,23 @@
 <?php
-    // Указываем кодировку
+    // Вказуємо кодування
     header('Content-Type: text/html; charset=utf-8');
  
-    $server = "sql205.unaux.com"; // имя хоста (уточняется у провайдера), если работаем на локальном сервере, то указываем localhost
-    $username = "unaux_31701774"; // Имя пользователя БД
-    $password = "wlx6jy7pigzms"; // Пароль пользователя. Если у пользователя нету пароля то, оставляем пустое значение ""
-    $database = "unaux_31701774_register"; // Имя базы данных, которую создали
+    $server = "sql205.unaux.com"; 
+    $username = "unaux_31701774"; 
+    $password = "wlx6jy7pigzms"; 
+    $database = "unaux_31701774_register";
      
-    // Подключение к базе данных через MySQLi
+    // Підключення до бази даних через MySQLi
     $mysqli = new mysqli($server, $username, $password, $database);
  
-    // Проверяем, успешность соединения. 
+    // Перевіряємо, чи успішність з'єднання.
     if ($mysqli->connect_errno) { 
-        die("<p><strong>Ошибка подключения к БД</strong></p><p><strong>Код ошибки: </strong> ". $mysqli->connect_errno ." </p><p><strong>Описание ошибки:</strong> ".$mysqli->connect_error."</p>"); 
+        die("<p><strong>Помилка підключення до БД</strong></p><p><strong>Код помилки: </strong> ". $mysqli->connect_errno ." </p><p><strong>Опис помилки:</strong> ".$mysqli->connect_error."</p>"); 
     }
  
-    // Устанавливаем кодировку подключения
+    // Встановлюємо кодування підключення
     $mysqli->set_charset('utf8');
  
-    //Для удобства, добавим здесь переменную, которая будет содержать адрес (URL) нашего сайта
+    //Змінна, яка містить адресу (URL) нашого сайту
     $address_site = "http://jetiky.unaux.com";
 ?>

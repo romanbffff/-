@@ -1,6 +1,13 @@
 <?php
     require_once("header.php");
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title class="lang" key="persn-sign-in">JetIKy - Авторизація</title>
+    <meta charset="utf-8">
+</head>
+</html>
 <!-- Блок для показу повідомлень -->
 <div class="block_for_messages">
     <?php
@@ -21,8 +28,8 @@
 </div>
  
 <?php
-    //Проверяем, если пользователь не авторизован, то выводим форму авторизации, 
-    //иначе выводим сообщение о том, что он уже авторизован
+    //Перевіряємо, якщо користувач не авторизований, то виводимо форму авторизації, 
+    //інакше виводимо повідомлення про те, що він уже авторизований
     if(!isset($_SESSION["email"]) && !isset($_SESSION["password"])){
 ?>
  
