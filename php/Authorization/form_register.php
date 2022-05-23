@@ -29,19 +29,20 @@
     if(!isset($_SESSION["email"]) && !isset($_SESSION["password"])){
 ?>
         <div id="form_register">
-            <h2>Форма регистрации</h2>
+        <section class="overlay1">
+            <h2 class="lang" key="sign-up">Реєстрація</h2>
  
             <form action="/php/Authorization/register.php" method="post" name="form_register">
                 <table>
                     <tbody><tr>
-                        <td> Имя: </td>
+                        <td class="lang" key="name"> Ім'я: </td>
                         <td>
                             <input type="text" name="first_name" required="required">
                         </td>
                     </tr>
  
                     <tr>
-                        <td> Фамилия: </td>
+                        <td class="lang" key="surname"> Прізвище: </td>
                         <td>
                             <input type="text" name="last_name" required="required">
                         </td>
@@ -56,38 +57,37 @@
                     </tr>
               
                     <tr>
-                        <td> Пароль: </td>
+                        <td class="lang" key="password"> Пароль: </td>
                         <td>
-                            <input type="password" name="password" placeholder="минимум 6 символов" required="required"><br>
+                            <input type="password" name="password" placeholder="minimum 6 characters" required="required"><br>
                             <span id="valid_password_message" class="mesage_error"></span>
                         </td>
                     </tr>
                     <tr>
-                        <td> Введите капчу: </td>
+                        <td class="lang" key="enter-captcha"> Введіть капчу: </td>
                         <td>
                             <p>
-                                <img src="captcha.php" alt="Капча" /> <br><br>
-                                <input type="text" name="captcha" placeholder="Проверочный код" required="required">
+                                <img src="captcha.php" alt="captcha" /> <br><br>
+                                <input type="text" name="captcha" placeholder="captcha" required="required">
                             </p>
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <input type="submit" name="btn_submit_register" value="Зарегистрироватся!">
+                        <button type="submit" class="submit-reg lang" key="sign-up1" name="btn_submit_register">Зареєструватись</button>
                         </td>
                     </tr>
                 </tbody></table>
             </form>
+        </section>
         </div>
 <?php
     }else{
 ?>
         <div id="authorized">
-            <h2>Вы уже зарегистрированы</h2>
+            <h2 class="lang" key="you-sign-up">Ви вже зареєстровані</h2>
         </div>
 <?php
     }
-     
-    //Подключение подвала
-    require_once("footer.php");
 ?>
+<footer class="f-reg"><p>JetIKy &copy; 2022</p></footer>

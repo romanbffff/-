@@ -1,5 +1,4 @@
 <?php
-    //Запускаем сессию
     session_start();
 ?>
  
@@ -8,7 +7,7 @@
     <head>
         <title>JetIKy</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="/css/style for account/styles.css">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="icon" href="/pictures/logo.png" type="image/x-icon">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -33,13 +32,13 @@
                             $('input[type=submit]').attr('disabled', false);
                         }else{
                             //Выводим сообщение об ошибке
-                            $('#valid_email_message').text('Не правильный Email');
+                            $('#valid_email_message').text('Not the correct Email');
          
                             // Дезактивируем кнопку отправки
                             $('input[type=submit]').attr('disabled', true);
                         }
                     }else{
-                        $('#valid_email_message').text('Введите Ваш email');
+                        $('#valid_email_message').text('Enter your email');
                     }
                 });
          
@@ -52,7 +51,7 @@
                         //Если длина введенного пароля меньше шести символов, то выводим сообщение об ошибке
                         if(password.val().length < 6){
                             //Выводим сообщение об ошибке
-                            $('#valid_password_message').text('Минимальная длина пароля 6 символов');
+                            $('#valid_password_message').text('The minimum password length is 6 characters');
          
                             // Дезактивируем кнопку отправки
                             $('input[type=submit]').attr('disabled', true);
@@ -65,14 +64,13 @@
                             $('input[type=submit]').attr('disabled', false);
                         }
                     }else{
-                        $('#valid_password_message').text('Введите пароль');
+                        $('#valid_password_message').text('Enter password');
                     }
                 });
             });
         </script>
     </head>
     <body>
- 
         <div id="header">
         <header>
         <nav>
@@ -84,7 +82,6 @@
                 <ul>
                     <li><a href="/index.php" class="lang" key="home">Головна</a></li>
                     <li><a href="#" class="lang" key="contact">Контакти</a></li>
-                    <li><a href="#" class="lang" key="shedule">Розклад</a></li>
             <?php
                 //Проверяем авторизован ли пользователь
                 if(!isset($_SESSION['email']) && !isset($_SESSION['password'])){
@@ -94,6 +91,7 @@
                 }else{
                     //Если пользователь авторизован, то выводим ссылку Выход
             ?> 
+                    <li><a href="#" class="lang" key="shedule">Розклад</a></li>
                     <li class="login"><a href="/php/Authorization/logout.php" class="login lang" key="logout">Вихід</a></li>
             <?php
                 }
@@ -106,3 +104,4 @@
         </div>
        </nav>
     </header>
+    <script src="/js/lang/translator-app.js"></script>

@@ -10,11 +10,10 @@
      
     //Объявляем ячейку для добавления успешных сообщений
     $_SESSION["success_messages"] = '';
-
     /*
     Проверяем была ли отправлена форма, то есть была ли нажата кнопка Войти. Если да, то идём дальше, если нет, то выведем пользователю сообщение об ошибке, о том что он зашёл на эту страницу напрямую.
     */
-    if(isset($_POST["btn_submit_auth"]) && !empty($_POST["btn_submit_auth"])){
+    if(isset($_POST["email"]) && !empty($_POST["password"])){
      
         //(1) Место для следующего куска кода
 
@@ -31,28 +30,27 @@
                      
                     // Если капча не верна, то возвращаем пользователя на страницу авторизации, и там выведем ему сообщение об ошибке что он ввёл неправильную капчу.
          
-                    $error_message = "<p class='mesage_error'><strong>Ошибка!</strong> Вы ввели неправильную капчу </p>";
+                    $error_message = "<p class='mesage_error'><strong>Помилка!</strong> Ви робот? - Спробуйте ще разОК </p>";
          
                     // Сохраняем в сессию сообщение об ошибке. 
                     $_SESSION["error_messages"] = $error_message;
          
                     //Возвращаем пользователя на страницу авторизации
                     header("HTTP/1.1 301 Moved Permanently");
-                    header("Location: ".$address_site."/form_auth.php");
-         
+                    header("Location: ".$address_site."/php/Authorization/form_auth.php");
                     //Останавливаем скрипт
                     exit();
                 }
             }else{
          
-                $error_message = "<p class='mesage_error'><strong>Ошибка!</strong> Поле для ввода капчи не должна быть пустой. </p>";
+                $error_message = "<p class='mesage_error'><strong>Помилка!</strong> Поле для вводу капчі не повинно бути порожнім. </p>";
          
                 // Сохраняем в сессию сообщение об ошибке. 
                 $_SESSION["error_messages"] = $error_message;
          
                 //Возвращаем пользователя на страницу авторизации
                 header("HTTP/1.1 301 Moved Permanently");
-                header("Location: ".$address_site."/form_auth.php");
+                header("Location: ".$address_site."/php/Authorization/form_auth.php");
          
                 //Останавливаем скрипт
                 exit();
@@ -73,22 +71,22 @@
                     //Если формат полученного почтового адреса не соответствует регулярному выражению
                     if( !preg_match($reg_email, $email)){
                         // Сохраняем в сессию сообщение об ошибке. 
-                        $_SESSION["error_messages"] .= "<p class='mesage_error' >Вы ввели неправильный email</p>";
+                        $_SESSION["error_messages"] .= "<p class='mesage_error'>Ви ввели хибний email</p>";
                          
                         //Возвращаем пользователя на страницу авторизации
                         header("HTTP/1.1 301 Moved Permanently");
-                        header("Location: ".$address_site."/form_auth.php");
+                        header("Location: ".$address_site."/php/Authorization/form_auth.php");
              
                         //Останавливаем скрипт
                         exit();
                     }
                 }else{
                     // Сохраняем в сессию сообщение об ошибке. 
-                    $_SESSION["error_messages"] .= "<p class='mesage_error' >Поле для ввода почтового адреса(email) не должна быть пустой.</p>";
+                    $_SESSION["error_messages"] .= "<p class='mesage_error' >Поле для вводу почтової адреси(email) не має бути порожнім.</p>";
                      
                     //Возвращаем пользователя на страницу регистрации
                     header("HTTP/1.1 301 Moved Permanently");
-                    header("Location: ".$address_site."/form_register.php");
+                    header("Location: ".$address_site."/php/Authorization/form_register.php");
              
                     //Останавливаем скрипт
                     exit();
@@ -97,11 +95,11 @@
              
             }else{
                 // Сохраняем в сессию сообщение об ошибке. 
-                $_SESSION["error_messages"] .= "<p class='mesage_error' >Отсутствует поле для ввода Email</p>";
+                $_SESSION["error_messages"] .= "<p class='mesage_error' >Відсутнє поле для вводу Email</p>";
                  
                 //Возвращаем пользователя на страницу авторизации
                 header("HTTP/1.1 301 Moved Permanently");
-                header("Location: ".$address_site."/form_auth.php");
+                header("Location: ".$address_site."/php/Authorization/form_auth.php");
              
                 //Останавливаем скрипт
                 exit();
@@ -120,11 +118,11 @@
                     $password = md5($password."top_secret");
                 }else{
                     // Сохраняем в сессию сообщение об ошибке. 
-                    $_SESSION["error_messages"] .= "<p class='mesage_error' >Укажите Ваш пароль</p>";
+                    $_SESSION["error_messages"] .= "<p class='mesage_error' >Вкажіть ваш пароль</p>";
                      
                     //Возвращаем пользователя на страницу регистрации
                     header("HTTP/1.1 301 Moved Permanently");
-                    header("Location: ".$address_site."/form_auth.php");
+                    header("Location: ".$address_site."/php/Authorization/form_auth.php");
              
                     //Останавливаем скрипт
                     exit();
@@ -132,11 +130,11 @@
                  
             }else{
                 // Сохраняем в сессию сообщение об ошибке. 
-                $_SESSION["error_messages"] .= "<p class='mesage_error' >Отсутствует поле для ввода пароля</p>";
+                $_SESSION["error_messages"] .= "<p class='mesage_error' >Відсутнє поле для вводу паролю</p>";
                  
                 //Возвращаем пользователя на страницу регистрации
                 header("HTTP/1.1 301 Moved Permanently");
-                header("Location: ".$address_site."/form_auth.php");
+                header("Location: ".$address_site."/php/Authorization/form_auth.php");
              
                 //Останавливаем скрипт
                 exit();
@@ -148,11 +146,11 @@
              
             if(!$result_query_select){
                 // Сохраняем в сессию сообщение об ошибке. 
-                $_SESSION["error_messages"] .= "<p class='mesage_error' >Ошибка запроса на выборке пользователя из БД</p>";
+                $_SESSION["error_messages"] .= "<p class='mesage_error' >Помилка запиту при виборі користувача із БД</p>";
                  
                 //Возвращаем пользователя на страницу регистрации
                 header("HTTP/1.1 301 Moved Permanently");
-                header("Location: ".$address_site."/form_auth.php");
+                header("Location: ".$address_site."/php/Authorization/form_auth.php");
              
                 //Останавливаем скрипт
                 exit();
@@ -172,11 +170,11 @@
                 }else{
                      
                     // Сохраняем в сессию сообщение об ошибке. 
-                    $_SESSION["error_messages"] .= "<p class='mesage_error' >Неправильный логин и/или пароль</p>";
+                    $_SESSION["error_messages"] .= "<p class='mesage_error lang' key='error1'>Неправильний логін і/або пароль</p>";
                      
                     //Возвращаем пользователя на страницу авторизации
                     header("HTTP/1.1 301 Moved Permanently");
-                    header("Location: ".$address_site."/form_auth.php");
+                    header("Location: ".$address_site."/php/Authorization/form_auth.php");
              
                     //Останавливаем скрипт
                     exit();
@@ -184,10 +182,10 @@
             }
         }else{
             //Если капча не передана
-            exit("<p><strong>Ошибка!</strong> Отсутствует проверочный код, то есть код капчи. Вы можете перейти на <a href=".$address_site."> главную страницу </a>.</p>");
+            exit("<p><strong>Помилка!</strong> Відсутній перевіряючий код(код капчі). Ви можете перейти на <a href=".$address_site."> головну сторінку </a>.</p>");
         }
 
      
     }else{
-        exit("<p><strong>Ошибка!</strong> Вы зашли на эту страницу напрямую, поэтому нет данных для обработки. Вы можете перейти на <a href=".$address_site."> главную страницу </a>.</p>");
+        exit("<p><strong>Помилка!</strong> Ви зайшли на цю сторінку, поза авторизацією, тому немає данних для обробки. Ви можете перейти на <a href=".$address_site."> головну сторінку </a>.</p>");
     }

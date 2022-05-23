@@ -25,20 +25,20 @@
             <div class="menu">
                 <ul>
                     <li><a href="index.php" class="lang" key="home">Головна</a></li>
-                    <li><a href="#" class="lang" key="contact">Контакти</a></li>
                     <li><a href="#Test" class="lang" key="simulator">Тренажер</a></li>
-                    <li><a href="#" class="lang" key="shedule">Розклад</a></li>
+                    <li><a href="#" class="lang" key="contact">Контакти</a></li>
 					<?php
                 //Проверяем авторизован ли пользователь
                 if(!isset($_SESSION['email']) && !isset($_SESSION['password'])){
 					// Не авторизований - вивід кнопки - ВХІД
             ?>
-			<li class="login"><a href="/php/Authorization/form_auth.php" class="login lang" target="_blank" key="login">Вхід</a></li>
+			<li class="login"><a href="/php/Authorization/form_auth.php" class="login lang" key="login">Вхід</a></li>
             <?php
                 }else{
                     //Если пользователь авторизован, то выводим ссылку Выход
             ?> 
-                    <li class="login"><a href="/php/Authorization/cab.php" class="login lang" key="logout">Особистий кабінет</a></li>
+                    <li><a href="#" class="lang" key="shedule">Розклад</a></li>
+                    <li class="login"><a href="/php/Authorization/cab.php" class="login lang" key="cab">Кабінет</a></li>
             <?php
                 }
             ?>
