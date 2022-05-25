@@ -80,7 +80,7 @@
             <div class="menu">
                 <ul>
                     <li><a href="/index.php" class="lang" key="home">Головна</a></li>
-                    <li><a href="#" class="lang" key="contact">Контакти</a></li>
+                    <li><a href="/php/Authorization/contact.php" class="lang" key="contact">Контакти</a></li>
             <?php
                 //Перевіряємо чи авторизований користувач
                 if(!isset($_SESSION['email']) && !isset($_SESSION['password'])){

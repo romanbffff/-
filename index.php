@@ -26,7 +26,7 @@
                 <ul>
                     <li><a href="index.php" class="lang" key="home">Головна</a></li>
                     <li><a href="#Test" class="lang" key="simulator">Тренажер</a></li>
-                    <li><a href="#" class="lang" key="contact">Контакти</a></li>
+                    <li><a href="/php/Authorization/contact.php" class="lang" key="contact">Контакти</a></li>
 					<?php
                 //Проверяем авторизован ли пользователь
                 if(!isset($_SESSION['email']) && !isset($_SESSION['password'])){

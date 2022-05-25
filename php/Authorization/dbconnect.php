@@ -2,10 +2,10 @@
     // Вказуємо кодування
     header('Content-Type: text/html; charset=utf-8');
  
-    $server = "sql205.unaux.com"; 
-    $username = "unaux_31701774"; 
-    $password = "wlx6jy7pigzms"; 
-    $database = "unaux_31701774_register";
+    $server = "localhost"; 
+    $username = "root"; 
+    $password = "root"; 
+    $database = "users";
      
     // Підключення до бази даних через MySQLi
     $mysqli = new mysqli($server, $username, $password, $database);
@@ -19,5 +19,5 @@
     $mysqli->set_charset('utf8');
  
     //Змінна, яка містить адресу (URL) нашого сайту
-    $address_site = "http://jetiky.unaux.com";
+    $address_site = "http://localhost";
 ?>
