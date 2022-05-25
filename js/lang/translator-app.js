@@ -37,6 +37,12 @@ var arrLang = {
       'persn-acc' : "JetIKy - Особистий кабінет",
       'persn-sign-in' : "JetIKy - Авторизація",
       'persn-sign-up' : "JetIKy - Реєстрація",
+      'contact-title' : "JetIKy - Контакти",
+      'contact' : "Контакти",
+      'tittle-quest' : "МАЄТЕ ЗАПИТАННЯ ЩОДО ПРОЕКТУ АБО СПІВПРАЦІ?",
+      'answer' : "Вам залюбки відповість",
+      'andress' : "Адреса: вулиця Келецька, 98,",
+      'city-vn' : "Вінниця, Вінницька область,21000",
 	},
 	'en' : {
       'unit' : "JetIKy - We are better than Jet!",
@@ -76,6 +82,13 @@ var arrLang = {
       'persn-acc' : "JetIKy - Personal account",
       'persn-sign-in' : "JetIKy - Sign-in",
       'persn-sign-up' : "JetIKy - Sign-up",
+      'contact-title' : "JetIKy - Contact",
+      'contact' : "Contact",
+      'tittle-quest' : "DO YOU HAVE QUESTIONS ABOUT THE PROJECT OR COOPERATION?",
+      'answer' : "Will gladly answer you",
+      'andress' : "Address: 98 Keletska Street,",
+      'tech-adm' : "Tech. moderator JetIKy",
+      'city-vn' : "Vinnytsia, Vinnytsia region, 21000",
 	}
 }
 
