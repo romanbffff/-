@@ -136,7 +136,7 @@
             }
 
             //Запит у БД на вибірці користувача.
-            $result_query_select = $mysqli->query("SELECT * FROM `users` WHERE email = '".$email."' AND password = '".$password."'");
+            $result_query_select = $mysqli->query("SELECT first_name FROM `users` WHERE email = '".$email."' AND password = '".$password."'");
              
             if(!$result_query_select){
                 // Зберігаємо у сесію повідомлення про помилку.
@@ -153,10 +153,16 @@
                 //Перевіряємо, якщо в базі немає користувача з такими даними, виводимо повідомлення про помилку
                 if($result_query_select->num_rows == 1){
                      
+                    while($info_user = $result_query_select->fetch_assoc()) {
+                        $_SESSION['first_name'] =$info_user['first_name'];
+                        $_SESSION['last_name'] =$info_user['last_name'];
+                    }
+
                     // Якщо введені дані збігаються з даними з бази, зберігаємо логін і пароль в масив сесій.
                     $_SESSION['email'] = $email;
                     $_SESSION['password'] = $password;
-             
+                    
+                    $result_query_select->close();
                     //Повертаємо користувача на головну сторінку
                     header("HTTP/1.1 301 Moved Permanently");
                     header("Location: ".$address_site."/php/Authorization/cab.php");

@@ -28,17 +28,17 @@
                     <li><a href="#Test" class="lang" key="simulator">Тренажер</a></li>
                     <li><a href="/php/Authorization/contact.php" class="lang" key="contact">Контакти</a></li>
 					<?php
-                //Проверяем авторизован ли пользователь
+                //Перевірка на авторизацію
                 if(!isset($_SESSION['email']) && !isset($_SESSION['password'])){
-					// Не авторизований - вивід кнопки - ВХІД
+					// Не авторизований? - вивід кнопки ВХІД
             ?>
 			<li class="login"><a href="/php/Authorization/form_auth.php" class="login lang" key="login">Вхід</a></li>
             <?php
                 }else{
-                    //Если пользователь авторизован, то выводим ссылку Выход
+                    //авторизований? - вивод кнопки ВИХІД
             ?> 
-                    <li><a href="#" class="lang" key="shedule">Розклад</a></li>
-                    <li class="login"><a href="/php/Authorization/cab.php" class="login lang" key="cab">Кабінет</a></li>
+                    <li><a href="/php/Authorization/cab.php" class="lang" key="cab">Кабінет</a></li>
+                    <li class="login"><a href="/php/Authorization/logout.php" class="login lang" key="logout">Вихід</a></li>
             <?php
                 }
             ?>
