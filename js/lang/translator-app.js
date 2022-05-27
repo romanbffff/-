@@ -43,9 +43,6 @@ var arrLang = {
       'answer' : "Вам залюбки відповість",
       'andress' : "Адреса: вулиця Келецька, 98,",
       'city-vn' : "Вінниця, Вінницька область,21000",
-      'partners-video' : "Відео-матеріали наших партнерів",
-      'hello' : "Привіт,",
-      'y-email' : "Ваш Email:",
 	},
 	'en' : {
       'unit' : "JetIKy - We are better than Jet!",
@@ -92,9 +89,6 @@ var arrLang = {
       'andress' : "Address: 98 Keletska Street,",
       'tech-adm' : "Tech. moderator JetIKy",
       'city-vn' : "Vinnytsia, Vinnytsia region, 21000",
-      'partners-video' : "Video materials of our partners",
-      'hello' : "Hello,",
-      'y-email' : "Your Email:",
 	}
 }
 
