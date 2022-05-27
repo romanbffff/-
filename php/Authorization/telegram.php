@@ -23,7 +23,7 @@ foreach($arr as $key => $value) {
 $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
 
 if ($sendToTelegram) {
-  header('Location: contact.php');
+  header('Location: /php/Authorization/contact.php');
 } else {
   echo "Error";
 }

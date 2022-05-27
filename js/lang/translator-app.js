@@ -46,6 +46,12 @@ var arrLang = {
       'partners-video' : "Відео-матеріали наших партнерів",
       'hello' : "Привіт,",
       'y-email' : "Ваш Email:",
+      'form-back' : "Форма зворотнього зв'язку",
+      'enter-your-name' : "Введіть ваше ім'я:",
+      'enter-your-phone' : "Введіть ваш номер телефона:",
+      'enter-your-email' : "Введіть email:",
+      'enter-messange' : "Введіть повідомлення:",
+      'send' : "Відправити",
 	},
 	'en' : {
       'unit' : "JetIKy - We are better than Jet!",
@@ -95,6 +101,12 @@ var arrLang = {
       'partners-video' : "Video materials of our partners",
       'hello' : "Hello,",
       'y-email' : "Your Email:",
+      'form-back' : "Feedback form",
+      'enter-your-name' : "Enter your name:",
+      'enter-your-phone' : "Enter your phone number:",
+      'enter-your-email' : "Enter email:",
+      'enter-messange' : "Enter Messange:",
+      'send' : "Send",
 	}
 }
 

@@ -24,30 +24,30 @@
               </p>
             </div> 
            </section>
-           <h1 class="lang h_cont" key="">Форма зворотнього зв'язку</h1> 
+           <h1 class="lang h_cont" key="form-back">Форма зворотнього зв'язку</h1> 
            <section class="form">
            <form action="telegram.php" method="POST">
 
                 <div class="form-group">
-                    <label for="">Введіть ваше ім'я:</label>
+                    <label for="" class="lang" key="enter-your-name">Введіть ваше ім'я:</label>
                     <input type="text" class="form-control" id="" name="user_name" placeholder="Name">
                 </div>
             
                 <div class="form-group">
-                    <label for="">Введіть ваш номер телефона:</label>
+                    <label for="" class="lang" key="enter-your-phone">Введіть ваш номер телефона:</label>
                     <input type="tel" class="form-control" id="" name="user_phone" placeholder="+38 (099) 99 99 999" pattern="^+380\d{3}\d{2}\d{2}\d{2}$" maxlength="13">
                 </div>
             
                 <div class="form-group">
-                    <label for="">Введіть email:</label>
+                    <label for="" class="lang" key="enter-your-email">Введіть email:</label>
                     <input type="email" class="form-control" id="" name="user_email" placeholder="mail@mail.com">
                 </div>
             <div class="form-group">
-              <label for="" class="mes">Введіть повідомлення:</label>
+              <label for="" class="mes lang" key="enter-messange">Введіть повідомлення:</label>
               <textarea placeholder="Message" rows="3" name="user_message"></textarea>
             </div>
                
-                <button type="submit" class="btn btn-primary">Відправити</button>
+                <button type="submit" class="btn btn-primary lang" key="send">Відправити</button>
             </form>
         </section>
      </body>
