@@ -90,7 +90,7 @@
                 }else{
                     //Якщо користувач авторизований, то виводимо посилання Вихід
             ?> 
-                    <li><a href="#" class="lang" key="shedule">Розклад</a></li>
+                    <li><a href="#" class="lang" key="cab">Кабінет</a></li>
                     <li class="login"><a href="/php/Authorization/logout.php" class="login lang" key="logout">Вихід</a></li>
             <?php
                 }

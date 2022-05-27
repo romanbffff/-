@@ -35,7 +35,7 @@
             
                 <div class="form-group">
                     <label for="">Введіть ваш номер телефона:</label>
-                    <input type="tel" class="form-control" id="" name="user_phone" placeholder="+38 (099) 99 99 999" pattern="^+380\d{3}\d{2}\d{2}\d{2}$">
+                    <input type="tel" class="form-control" id="" name="user_phone" placeholder="+38 (099) 99 99 999" pattern="^+380\d{3}\d{2}\d{2}\d{2}$" maxlength="13">
                 </div>
             
                 <div class="form-group">

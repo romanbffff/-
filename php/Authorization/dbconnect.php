@@ -1,23 +1,23 @@
 <?php
-    // Вказуємо кодування
+    // Указываем кодировку
     header('Content-Type: text/html; charset=utf-8');
  
-    $server = "localhost"; 
-    $username = "root"; 
-    $password = "root"; 
-    $database = "users";
+    $server = "sql102.ezyro.com"; // имя хоста (уточняется у провайдера), если работаем на локальном сервере, то указываем localhost
+    $username = "ezyro_31701058"; // Имя пользователя БД
+    $password = "i6zg3oh"; // Пароль пользователя. Если у пользователя нету пароля то, оставляем пустое значение ""
+    $database = "ezyro_31701058_register"; // Имя базы данных, которую создали
      
-    // Підключення до бази даних через MySQLi
+    // Подключение к базе данных через MySQLi
     $mysqli = new mysqli($server, $username, $password, $database);
  
-    // Перевіряємо, чи успішність з'єднання.
+    // Проверяем, успешность соединения. 
     if ($mysqli->connect_errno) { 
-        die("<p><strong>Помилка підключення до БД</strong></p><p><strong>Код помилки: </strong> ". $mysqli->connect_errno ." </p><p><strong>Опис помилки:</strong> ".$mysqli->connect_error."</p>"); 
+        die("<p><strong>Ошибка подключения к БД</strong></p><p><strong>Код ошибки: </strong> ". $mysqli->connect_errno ." </p><p><strong>Описание ошибки:</strong> ".$mysqli->connect_error."</p>"); 
     }
  
-    // Встановлюємо кодування підключення
+    // Устанавливаем кодировку подключения
     $mysqli->set_charset('utf8');
  
-    //Змінна, яка містить адресу (URL) нашого сайту
-    $address_site = "http://localhost";
+    //Для удобства, добавим здесь переменную, которая будет содержать адрес (URL) нашего сайта
+    $address_site = "http://jetiky.ezyro.com";
 ?>
