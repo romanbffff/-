@@ -37,3 +37,74 @@ section{
 	height: 260px;
 	border-radius: 100%;
 }
+.h_cont{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+section form{
+
+}
+.form{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px 20px 50px;
+    font-size: 30px;
+    box-shadow: 20px 20px 40px -6px rgb(0 0 0 / 20%);
+    background: #F8981C;
+    border-radius: 28px;
+    width: 800px;
+    height: 400px;
+}
+input[type="text"]{
+    padding: 13px 18px 10px 15px;
+
+}
+input[type="tel"]{
+    margin-top: 10px;
+    border-radius: 20px;
+    border-color: #F8981C;
+    padding: 13px 18px 10px 15px;
+}
+input[type="email"]{
+    margin-top: -20px;
+    padding: 13px 18px 10px 15px;
+
+}
+.label mes{
+    padding-top: -80px;
+}
+textarea{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 250px;
+    height: 70px;
+    border-radius: 20px;
+    resize: none;
+    font-size: 18.5px;
+    font-weight: bold;
+    padding: 13px;
+}
+button[type="submit"]{
+    margin-left: 288px;
+    border-bottom: none;
+    padding: 10px 20px 10px 20px;
+    color: black;
+    box-shadow:  black;
+    background: white;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1em;
+    border: none;
+    margin-top: 15px;
+}
+button[type="submit"]:hover{
+    padding-bottom: 10px;
+    border-bottom:30px;
+    background: white;
+    opacity: 0.9;
+    transition: all 0.4s ease-out;
+    cursor: pointer;
+}
+
