@@ -5,9 +5,17 @@
 body{
 	font-family: Arial;
 }
+label{
+    display: none;
+}
 .page{
 overflow-x: hidden;
 }
+#menu-toggle{
+    display: none;
+    position:absolute; 
+}
+
 header {
 	width: 100%;
     color: black;
@@ -22,10 +30,11 @@ header {
 }
 
 .logo{
-    padding-right: 0.5em;
+    padding-right: 1em;
 }
 .logo img{
 	margin-left: 20px;
+    margin-right: 80px;
     width: 57px;
     height: 57px;
     border-radius: 50%;
@@ -34,6 +43,10 @@ header {
 .logo, .menu {
     display: inline-block;
     vertical-align: middle;
+}
+.menu{
+    margin-top: -80px;
+    margin-left: 50px;
 }
 .menu a{
     cursor: pointer;
@@ -53,7 +66,7 @@ header {
 	padding-bottom: 4px;
 }
 .menu ul{
-	  margin-left: 20px;
+	  margin-left: -20px;
 	  text-align: center;
 }
 .login a:hover{
@@ -188,6 +201,227 @@ footer{
     text-align:center;
     font-size: 1em;
   
+}
+footer p {
+    font-weight: bold;
+ }
+}
+@media screen and (max-width: 480px){
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body {
+    overflow-x: hidden;
+}
+body{
+    font-family: Arial;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/*-------------------------------------------------------*/
+/* HEADER
+/*-------------------------------------------------------*/
+.logo{
+    top: 0;
+    left: 0;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.logo img{
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+}
+.menu-btn{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right:0;
+  margin-right: 20px;
+  margin-top: 20px;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+  z-index: 1;
+}
+ 
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3.5px;
+  background-color: black;
+  transition-duration: .25s;
+}
+.menu-btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu-btn > span::after {
+  content: '';
+  top: 8px;
+
+}
+ 
+.menu{
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 10px 0;
+  list-style: none;
+  background-color: #FD940A;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  padding-bottom: 45px;
+  border-radius: 10px;
+  transition-duration: .55s;
+}
+ 
+.menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  color: #333;
+  font-size: 1.75em;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+  border-bottom: 0.4px solid white;
+}
+
+#menu-toggle{
+  opacity: 0;
+}
+ 
+#menu-toggle:checked ~ .menu-btn > span{
+  transform: rotate(45deg);
+}
+#menu-toggle:checked ~ .menu-btn > span::before{
+  top: 0;
+  transform: rotate(0);
+}
+#menu-toggle:checked ~ .menu-btn > span::after{
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu-toggle:checked ~ .menu{
+  visibility: visible;
+  left: 0;
+}
+/*-------------------------------------------------------*/
+/* INFORMATION
+/*-------------------------------------------------------*/
+
+
+.block-information {
+    margin-top: 5px;
+    display: block;
+    justify-content: center;
+    color: #FFF;
+    background-color: #FD940A;
+    background-image: radial-gradient(circle, #F9A72B 0%, #FA9026 70%, #FB6C1F 100%);
+    border-radius: 30px;
+    width: auto;
+    padding-bottom: 20px;
+}
+
+.block-information h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: black;
+}
+.block-information h2 {
+    padding-top: 6px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+}
+
+.text_info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px 0 15px; 
+}
+.text_info ul{
+    padding-left: 20px;
+    color: #B51411;
+    margin-bottom: 20px;
+}
+.text_info span {
+    font-size: 0.7em;
+    color: white;
+    list-style-type: disc;
+}
+
+
+.gif img {
+    display: flex;
+    margin: 0 30px 0 30px;
+    border-radius: 40px;
+    width: 315px;
+    height: 250px;
+}
+/*-------------------------------------------------------*/
+/* Test
+/*-------------------------------------------------------*/
+.Trenajer h1{
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: black;
+}
+.gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.gallery img {
+      color: #FFF;
+      background-color: #FD940A;
+      background-image: radial-gradient(circle, #F9A72B 0%, #FA9026 70%, #FB6C1F 100%);
+      border-radius: 20px;
+      width: 240px;
+      height: 240px;
+      padding: 2.1em;
+      margin: 0.9em;
+  
+}
+
+.photo {
+    position: relative;
+}
+
+.photo span{
+    position: absolute;
+    text-align: center;
+    top: 20px ;
+    left: 25px;
+    right: 30px;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+footer{
+    border-radius: 50%;
+    background-color: #F8981C;
+    text-align:center;
+    font-size: 0.8em; 
 }
 footer p {
     font-weight: bold;
