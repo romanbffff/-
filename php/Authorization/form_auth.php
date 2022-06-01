@@ -5,9 +5,12 @@
 <html>
 <head>
     <title class="lang" key="persn-sign-in">JetIKy - Авторизація</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/style for account/styles.css">
     <meta charset="utf-8">
 </head>
-</html>
+
+<body>
 <!-- Блок для показу повідомлень -->
 <div class="block_for_messages">
     <?php
@@ -60,8 +63,8 @@
                     <td class="lang" key="enter-captcha"> Введіть капчу: </td>
                     <td>
                         <p>
-                            <img src="captcha.php" alt="Img captcha" /> <br>
-                            <input type="text" name="captcha" placeholder="captcha">
+                            <img src="captcha.php"  class="captcha" alt="Img captcha" /> <br>
+                            <input type="text" name="captcha" class="c_a" placeholder="captcha">
                         </p>
                     </td>
                 </tr>
@@ -94,3 +97,5 @@
 <footer class="f-auth">
   <p>JetIKy &copy; 2022</p>
 </footer>
+        </body>
+    </html>

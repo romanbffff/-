@@ -5,6 +5,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="/css/style for account/styles.css">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
@@ -70,12 +71,11 @@
         </script>
     </head>
     <body>
-        <div id="header">
         <header>
         <nav>
         <div class="header-menu">
             <div class="logo">
-               <img src="/pictures/logo.png" alt="logo" title="JetIKy">
+               <a href="/index.php"><img src="/pictures/logo.png" alt="logo" title="JetIKy"></a>
             </div>
             <div class="burger-menu">
              <input id="menu-toggle" type="checkbox" />
@@ -84,24 +84,25 @@
             </label>
             <div class="menu">
                 <ul>
-                    <li><a href="/index.php" class="lang" key="home">Головна</a></li>
-                    <li><a href="/php/Authorization/contact.php" class="lang" key="contact">Контакти</a></li>
+                    <li><a href="/index.php" class="lang menu-item" key="home">Головна</a></li>
+                    <li><a href="/php/Authorization/contact.php" class="lang menu-item" key="contact">Контакти</a></li>
             <?php
                 //Перевіряємо чи авторизований користувач
                 if(!isset($_SESSION['email']) && !isset($_SESSION['password'])){
                     // якщо ні, то виводимо блок із посиланнями на сторінку реєстрації та авторизації
             ?>
+            <li class="login"><a href="/php/Authorization/form_auth.php" class="login lang menu-item" key="login">Вхід</a></li>
             <?php
                 }else{
                     //Якщо користувач авторизований, то виводимо посилання Вихід
             ?> 
-                    <li><a href="/php/Authorization/cab.php" class="lang" key="cab">Кабінет</a></li>
-                    <li class="login"><a href="/php/Authorization/logout.php" class="login lang" key="logout">Вихід</a></li>
+                    <li><a href="/php/Authorization/cab.php" class="lang menu-item" key="cab">Кабінет</a></li>
+                    <li class="login"><a href="/php/Authorization/logout.php" class="login lang menu-item" key="logout">Вихід</a></li>
             <?php
                 }
             ?>
-            <li><a id="ua" class="translate">UA</a></li>
-            <li><a id="en" class="translate">EN</a></li>
+            <li><a id="ua" class="translate menu-item">UA</a></li>
+            <li><a id="en" class="translate menu-item">EN</a></li>
             </ul>
             </div>
             </div> 

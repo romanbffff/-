@@ -1,3 +1,23 @@
+@media screen and (min-width: 1266px) and (orientation: landscape) { 
+header {
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+
+.menu li {
+    padding-left: 2.7em;
+    margin-right: 2.7em;
+    display: inline-block;    
+}
 
 .change-lang {
    margin-left: 50px;
@@ -5,7 +25,10 @@
 .clear{
     clear: both;
 }
-
+.captcha{
+    width: 120px;
+    border-radius: 20px;
+}
 .mesage_error{
     font-size: 16px;
     color: red;
@@ -65,19 +88,6 @@
 
 #authorized h2{
     text-align: center;
-}
-header {
-	width: 100%;
-    height: 50px;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 5px;
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 1;
 }
 #form_register {
     width: 450px;
@@ -226,4 +236,184 @@ input[type="text"]{
 .f-contact {
     margin-top: 15.7%;
 }
+ }
+@media screen and (max-width: 576px){
+html{
+    height: 100%;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.logo{
+    top: 0;
+    left: 0;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.clear{
+    clear: both;
+}
+
+.mesage_error{
+    font-size: 10px;
+    color: red;
+}
+
+.success_message{
+    color: green;
+}
+
+.block_for_messages{
+    text-align: center;
+}
+
+
+#authorized h2{
+    text-align: center;
+}
+.captcha{
+    margin-top: 7px;
+    width: 80px;
+    border-radius: 20px;
+}
+.c_a{
+    display: flex;
+    margin-top: -80px;
+}
+.overlay {
+    margin: 0 40px 0 40px;
+    padding: 0 15px;
+    background-color: #F8981C;
+    position: relative;
+    border-radius: 28px;
+    height: 350px;
+}
+.overlay1 {
+    margin: 0 30px 0 30px;
+    padding: 0 15px;
+    background-color: #F8981C;
+    position: relative;
+    border-radius: 28px;
+    height: 400px;
+}
+section{
+    font-family: Arial;
+    font-size: 15px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 20px 20px 40px -6px rgb(0 0 0 / 20%);
+    background: rgba(255, 255, 255, 0.3);
+}
+section h2{
+    margin-top: 10px;
+    font-size: 1.8em;
+    text-align: center;
+    color: #323232;
+}
+#form_auth {
+    margin-top: 10%;
+}
+input::-webkit-input-placeholder {
+    color: #323232;
+}
+
+input[type="email"]{
+    background: white;
+    padding: 4px;
+    margin-bottom: 10px;
+    border: none;
+    margin-top: 4%;
+    border-radius: 5000px;
+    backdrop-filter: blur(5px);
+    color: black;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+}
+input[type="password"]{
+    background: white;
+    padding: 4px;
+    margin-bottom: 3px;
+    border: none;
+    margin-top: 3%;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5000px;
+    box-shadow: 1px 2px 6px 0px rgb(0 0 0 / 14%);
+    color: black;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+}
+input[type="text"]{
+    background: white;
+    padding: 4px;
+    margin-bottom: 3px;
+    border: none;
+    margin-top: 3%;
+    border-radius: 5000px;
+    backdrop-filter: blur(5px);
+    color: black;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 20%);
+    outline: none;
+}
+
+.submit{ 
+    border-bottom: none;
+    padding: 10px 30px 10px 30px;
+    color: black;
+    box-shadow:  black;
+    background: white;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1em;
+    border: none;
+    margin-top: 15px;
+}
+.create-ac h4{
+    padding-top: 15px;
+}
+.create-ac a{
+    padding-top: 5 px;
+}
+.submit-reg{
+    border-bottom: none;
+    padding: 10px 30px 10px 30px;
+    color: black;
+    box-shadow:  black;
+    background: white;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1em;
+    border: none;
+    margin-top: 25px;
+}
+.i_reg{
+    display: flex;
+    margin-top: -80px;
+}
+.create-ac {
+    text-align: center;
+}
+.create-ac a {
+    text-decoration: underline;
+    color: white;   
+}
+.form_register {
+    flex-grow: 1;
+}
+.form_auth{
+   flex-grow: 1;
+}
+footer{
+    margin-top: 60%;
+}
+
+
+    }

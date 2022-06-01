@@ -5,9 +5,11 @@
 <html>
 <head>
     <title class="lang" key="persn-sign-up">JetIKy - Реєстрація</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/style for account/styles.css">
     <meta charset="utf-8">
 </head>
-</html>
+<body>
 <!-- Блок для виведення повідомлень -->
 <div class="block_for_messages">
     <?php
@@ -70,11 +72,11 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="lang" key="enter-captcha"> Введіть капчу: </td>
+                        <td class="lang reg" key="enter-captcha"> Введіть капчу: </td>
                         <td>
                             <p>
-                                <img src="captcha.php" alt="captcha" /> <br><br>
-                                <input type="text" name="captcha" placeholder="captcha" required="required">
+                                <img src="captcha.php" class="captcha" alt="captcha" /> <br><br>
+                                <input type="text" class="i_reg" name="captcha" placeholder="captcha" required="required">
                             </p>
                         </td>
                     </tr>
@@ -97,3 +99,5 @@
     }
 ?>
 <footer class="f-reg"><p>JetIKy &copy; 2022</p></footer>
+</body>
+    </html>
