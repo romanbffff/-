@@ -77,6 +77,11 @@
             <div class="logo">
                <img src="/pictures/logo.png" alt="logo" title="JetIKy">
             </div>
+            <div class="burger-menu">
+             <input id="menu-toggle" type="checkbox" />
+            <label class="menu-btn" for="menu-toggle">
+            <span class="menu-toggle"></span>
+            </label>
             <div class="menu">
                 <ul>
                     <li><a href="/index.php" class="lang" key="home">Головна</a></li>

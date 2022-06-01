@@ -5,6 +5,7 @@
 <html>
 <head>
     <title class="lang" key="contact-title">JetIKy - Контакти</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="/css/contact.css">
     <meta charset="utf-8">
 </head>

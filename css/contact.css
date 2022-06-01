@@ -1,3 +1,101 @@
+@media screen and (min-width: 1266px) and (orientation: landscape) { 
+/*-------------------------------------------------------*/
+/* Navigation
+/*-------------------------------------------------------*/
+body{
+    font-family: Arial;
+}
+.menu-btn{
+    display: none;
+}
+.page{
+overflow-x: hidden;
+}
+#menu-toggle{
+    display: none;
+    position:absolute; 
+}
+
+header {
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+.logo a{
+    margin-top: 20px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1em;
+}
+.logo img{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 80px;
+    margin-bottom: -22px;
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+}
+
+.logo, .menu {
+    display: inline-block;
+    vertical-align: middle;
+}
+.menu{
+    margin-top: -40px;
+    margin-left: 50px;
+}
+.menu a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    vertical-align: middle;
+    font-size: 1.2em;
+
+}
+.menu li {
+    padding-left: 2.7em;
+    margin-right: 2.7em;
+    display: inline-block;    
+}
+.menu a:hover{
+    border-bottom:3px solid #fcac45;
+}
+.menu ul{
+      margin-left: -20px;
+      text-align: center;
+}
+.login a:hover{
+    padding-bottom: 10px;
+    border-bottom:30px;
+    color: black;
+    background: white;
+    box-shadow: inset 0 0 0 3px #F8981C;
+    opacity: 0.9;
+    transition: all 0.4s ease-out;
+}
+.login a{
+    border-bottom: none;
+    margin-left: 120px;
+    padding: 15px 50px 15px 50px;
+    color: white;
+    box-shadow:  white;
+    background: #F8981C;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.4em;
+    border: none;
+}
 body{
 	font-family: Arial;
 }
@@ -105,4 +203,122 @@ button[type="submit"]:hover{
     transition: all 0.4s ease-out;
     cursor: pointer;
 }
+}
+@media screen and (max-width: 576px){
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body {
+    overflow-x: hidden;
+}
+body{
+    font-family: Arial;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/*-------------------------------------------------------*/
+/* HEADER
+/*-------------------------------------------------------*/
+.logo{
+    top: 0;
+    left: 0;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.logo img{
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+}
+.menu-btn{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right:0;
+  margin-right: 20px;
+  margin-top: 20px;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+  z-index: 2;
+}
+ 
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3.5px;
+  background-color: black;
+  transition-duration: .25s;
+}
+.menu-btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu-btn > span::after {
+  content: '';
+  top: 8px;
+
+}
+ 
+.menu{
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 10px 0;
+  list-style: none;
+  background-color: #FD940A;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  padding-bottom: 45px;
+  border-radius: 10px;
+  transition-duration: .55s;
+  z-index: 1;
+}
+ 
+.menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  color: #333;
+  font-size: 1.75em;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+  border-bottom: 0.4px solid white;
+}
+
+#menu-toggle{
+  opacity: 0;
+}
+ 
+#menu-toggle:checked ~ .menu-btn > span{
+  transform: rotate(45deg);
+}
+#menu-toggle:checked ~ .menu-btn > span::before{
+  top: 0;
+  transform: rotate(0);
+}
+#menu-toggle:checked ~ .menu-btn > span::after{
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu-toggle:checked ~ .menu{
+  visibility: visible;
+  left: 0;
+}
+
+}
+
 
