@@ -284,20 +284,20 @@ body {
     margin-top: -80px;
 }
 .overlay {
-    margin: 0 40px 0 40px;
+    margin: 30px 30px 0 30px;
     padding: 0 15px;
     background-color: #F8981C;
     position: relative;
     border-radius: 28px;
-    height: 350px;
+    height: 380px;
 }
 .overlay1 {
-    margin: 0 30px 0 30px;
+    margin: 30px 30px 0 30px;
     padding: 0 15px;
     background-color: #F8981C;
     position: relative;
     border-radius: 28px;
-    height: 400px;
+    height: 420px;
 }
 section{
     font-family: Arial;
@@ -310,6 +310,7 @@ section{
 }
 section h2{
     margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 1.8em;
     text-align: center;
     color: #323232;
@@ -412,7 +413,12 @@ input[type="text"]{
    flex-grow: 1;
 }
 footer{
-    margin-top: 60%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+
 }
 
 

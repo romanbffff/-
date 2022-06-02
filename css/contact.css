@@ -248,11 +248,12 @@ h1{
  margin-bottom: 30px;
 }
 .contact{
+    margin: 0 auto;
+    width: 365px;
     padding: 0 15px;
     background-color: #F8981C;
     position: relative;
     border-radius: 28px;
-    margin: 0 5px 0 5px;
     height: auto;
     padding-bottom: 40px;
     color: white;
@@ -290,12 +291,12 @@ section{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    padding: 15px 7px 15px 7px;
+    padding: 15px 15px 15px 15px;
     font-size: 20px;
     box-shadow: 20px 20px 40px -6px rgb(0 0 0 / 20%);
     background: #F8981C;
     border-radius: 28px;
-    width: 360px;
+    width: 365px;
     height: 400px;
 }
 #enter-your-name{
@@ -345,6 +346,10 @@ button[type="submit"]{
 }
 footer{
     margin-top: 30px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 }
 

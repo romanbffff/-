@@ -52,8 +52,8 @@
                 <button type="submit" class="btn btn-primary lang" key="send">Відправити</button>
             </form>
         </section>
-     </body>
     <footer class="f-contact"><p>JetIKy &copy; 2022</p></footer>
+    </body>
 </html>
 
 

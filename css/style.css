@@ -331,28 +331,28 @@ body{
 
 
 .block-information {
-    margin-top: 5px;
+   margin: 0 auto;
     display: block;
     justify-content: center;
     color: #FFF;
     background-color: #FD940A;
     background-image: radial-gradient(circle, #F9A72B 0%, #FA9026 70%, #FB6C1F 100%);
     border-radius: 30px;
-    width: auto;
+    width: 365px;
     padding-bottom: 20px;
 }
 
 .block-information h1 {
     padding-top: 20px;
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.7em;
     font-weight: bold;
     color: black;
 }
 .block-information h2 {
-    padding-top: 6px;
+    padding-top: 5px;
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: bold;
     color: white;
 }
@@ -368,7 +368,7 @@ body{
     margin-bottom: 20px;
 }
 .text_info span {
-    font-size: 0.7em;
+    font-size: 0.9em;
     color: white;
     list-style-type: disc;
 }
@@ -388,10 +388,12 @@ body{
 /* Test
 /*-------------------------------------------------------*/
 .Trenajer h1{
+  margin-top: 30px;
   text-align: center;
-  font-size: 1.6em;
+  font-size: 1.7em;
   font-weight: bold;
   color: black;
+  margin-bottom: 30px;
 }
 .gallery{
     display: flex;
