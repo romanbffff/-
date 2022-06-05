@@ -211,7 +211,231 @@ footer p {
     font-weight: bold;
  }
 }
-@media screen and (max-width: 576px){
+@media screen and (min-width: 764px) and (max-width: 1265px){ 
+/*-------------------------------------------------------*/
+/* Navigation
+/*-------------------------------------------------------*/
+body{
+    font-family: Arial;
+}
+.menu-btn{
+    display: none;
+}
+.page{
+overflow-x: hidden;
+}
+#menu-toggle{
+    display: none;
+    position:absolute; 
+}
+
+header {
+    width: 100%;
+    height: 5%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1em;
+}
+.logo img{
+    margin-left: 5px;
+    margin-right: 0px;
+    margin-bottom: -24px;
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+}
+
+.logo, .menu {
+    margin-top: 2px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.menu{
+    margin-top: -40px;
+    margin-left: 50px;
+}
+.menu a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    vertical-align: middle;
+    font-size: 1.2em;
+
+}
+.menu li {
+    padding-left: 0.7em;
+    margin-right: 0.7em;
+    display: inline-block;    
+}
+.menu a:hover{
+    padding-bottom: 3px;
+    border-bottom:3px solid #fcac45;
+}
+.menu ul{
+      padding-left: 10px;
+      margin-left: 15px;
+      text-align: center;
+}
+.login a:hover{
+    padding-bottom: 10px;
+    border-bottom:30px;
+    color: black;
+    background: white;
+    box-shadow: inset 0 0 0 3px #F8981C;
+    opacity: 0.9;
+    transition: all 0.4s ease-out;
+}
+.login a{
+    border-bottom: none;
+    margin-left: 20px;
+    padding: 9px 30px 9px 30px;
+    color: white;
+    box-shadow:  white;
+    background: #F8981C;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.4em;
+    border: none;
+}
+.change-lang {
+   margin-left: 50px;
+}
+/*-------------------------------------------------------*/
+/* INFORMATION
+/*-------------------------------------------------------*/
+
+
+.block-information {
+   margin: 0 auto;
+    display: block;
+    justify-content: center;
+    color: #FFF;
+    background-color: #FD940A;
+    background-image: radial-gradient(circle, #F9A72B 0%, #FA9026 70%, #FB6C1F 100%);
+    border-radius: 30px;
+    width: 700px;
+    padding-bottom: 20px;
+}
+
+.block-information h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: black;
+}
+.block-information h2 {
+    padding-top: 0px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+.text_info {
+    display: flex;
+    flex-direction: column;
+}
+.text_info ul{
+    color: #B51411;
+    margin-bottom: 0px;
+}
+.text_info span {
+    font-size: 1.2em;
+    color: white;
+    list-style-type: disc;
+}
+
+.gif img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 40px;
+    width: 400px;
+    height: 300px;
+    margin-top: 20px;
+}
+/*-------------------------------------------------------*/
+/* Test
+/*-------------------------------------------------------*/
+.Trenajer h1{
+  padding: 10px 0 10px 0;
+  text-align: center;
+  font-size: 2.4em;
+  font-weight: bold;
+  color: black;
+}
+.gallery{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.gallery img {
+  cursor: pointer;
+  color: #FFF;
+  background-color: #FD940A;
+  background-image: radial-gradient(circle, #F9A72B 0%, #FA9026 70%, #FB6C1F 100%);
+  border-radius: 20px;
+  width: 140px;
+  height: 140px;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+  padding: 2.1em;
+  margin: 0.9em;
+}
+
+.gallery img:hover{
+     
+     transform: scale(1.05);
+      transition: all 0.7s ease-in-out;
+}
+
+.photo {
+    position: relative;
+}
+
+.photo span{
+    position: absolute;
+    text-align: center;
+    top: 20px ;
+    left: 25px;
+    right: 30px;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+
+
+footer{
+    margin-bottom: -500px;
+    border-radius: 50%;
+    background-color: #F8981C;
+    text-align:center;
+    font-size: 1em;
+  
+}
+footer p {
+    font-weight: bold;
+ }
+}
+
+@media screen and (max-width: 763px){
 *{
     padding: 0;
     margin: 0;

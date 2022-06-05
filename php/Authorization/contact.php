@@ -32,21 +32,21 @@
 
                 <div class="form-group">
                     <label for="" class="lang" key="enter-your-name">Введіть ваше ім'я:</label>
-                    <input type="text" class="form-control" id="" name="user_name" placeholder="Name">
+                    <input type="text" class="form-control" id="" name="user_name" placeholder="Name" required>
                 </div>
             
                 <div class="form-group">
                     <label for="" class="lang" key="enter-your-phone">Введіть ваш номер телефона:</label>
-                    <input type="tel" class="form-control" id="" name="user_phone" placeholder="+38 (099) 99 99 999" pattern="^+380\d{3}\d{2}\d{2}\d{2}$" maxlength="13">
+                    <input type="tel" class="form-control" required id="" name="user_phone" placeholder="+38 (099) 99 99 999" pattern="^+380\d{3}\d{2}\d{2}\d{2}$" maxlength="13">
                 </div>
             
                 <div class="form-group">
                     <label for="" class="lang" key="enter-your-email">Введіть email:</label>
-                    <input type="email" class="form-control" id="" name="user_email" placeholder="mail@mail.com">
+                    <input type="email" class="form-control" id="" name="user_email" placeholder="mail@mail.com" required >
                 </div>
             <div class="form-group">
               <label for="" class="mes lang" key="enter-messange">Введіть повідомлення:</label>
-              <textarea placeholder="Message" rows="3" name="user_message"></textarea>
+              <textarea placeholder="Message" rows="3" name="user_message" required ></textarea>
             </div>
                
                 <button type="submit" class="btn btn-primary lang" key="send">Відправити</button>

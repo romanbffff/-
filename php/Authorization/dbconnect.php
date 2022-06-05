@@ -19,5 +19,5 @@
     $mysqli->set_charset('utf8');
  
     //Для удобства, добавим здесь переменную, которая будет содержать адрес (URL) нашего сайта
-    $address_site = "http://jetiky.ezyro.com";
+    $address_site = "localhost";
 ?>
