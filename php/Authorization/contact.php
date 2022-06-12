@@ -1,16 +1,25 @@
-<?php
-    require_once("header.php");
-?>
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <title class="lang" key="contact-title">JetIKy - Контакти</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>window.onload = function () {document.body.classList.add('loaded');}</script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="/css/contact.css">
     <meta charset="utf-8">
 </head>
        <body>
+        <div class="preloader">
+  <div class="preloader__row">
+    <div class="preloader__item"></div>
+    <div class="preloader__item"></div>
+  </div>
+</div>
+    <?php
+    require_once("header.php");
+    ?>
+    
         <h1 class="lang" key="contact">Контакти</h1>
              <section class="contact">
              <div class="happy_girl_img">

@@ -1,16 +1,25 @@
-<?php
-    session_start();
-    require_once("header.php");
-    include "dbConnection.php";
-?>
 <!DOCTYPE html>
 <html>
 <head>
     <title class="lang" key="persn-acc">JetIKy - Особистий кабінет</title>
     <meta charset="utf-8">
+    <script>window.onload = function () {document.body.classList.add('loaded');}</script>
+    <link rel="icon" href="pictures/logo.png" type="image/x-icon">
+    <link rel="icon" href="pictures/logo.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="/css/style for account/cab.css">
 </head>
 <body>
+	<div class="preloader">
+  <div class="preloader__row">
+    <div class="preloader__item"></div>
+    <div class="preloader__item"></div>
+  </div>
+</div>
+	<?php
+    session_start();
+    require_once("header.php");
+    include "dbConnection.php";
+    ?>
 <?php
  if(!isset($_SESSION['email']) && !isset($_SESSION['password'])){
 					

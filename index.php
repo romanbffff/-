@@ -11,11 +11,17 @@
 	<link rel="icon" href="pictures/logo.png" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>window.onload = function () {document.body.classList.add('loaded');}</script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/lang/translator-app.js"></script>
 </head>
-
 <body class="page" id="HomePage">
+	<div class="preloader">
+  <div class="preloader__row">
+    <div class="preloader__item"></div>
+    <div class="preloader__item"></div>
+  </div>
+</div>
 	<header>
         <div class="header-menu">
             <div class="logo">

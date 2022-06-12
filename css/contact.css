@@ -1,5 +1,73 @@
 @media screen and (min-width: 1266px) and (orientation: landscape) { 
 /*-------------------------------------------------------*/
+/* Preloader
+/*-------------------------------------------------------*/
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 1001;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #FD940A;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+/*-------------------------------------------------------*/
 /* Navigation
 /*-------------------------------------------------------*/
 body{
@@ -73,18 +141,18 @@ section{
     height: 400px;
 }
 input[type="text"]{
-    padding: 13px 18px 10px 15px;
+    padding: 18px 18px 15px 15px;
 
 }
 input[type="tel"]{
     margin-top: 10px;
     border-radius: 20px;
     border-color: #F8981C;
-    padding: 13px 18px 10px 15px;
+    padding: 7px 10px 5px 10px;
 }
 input[type="email"]{
     margin-top: -20px;
-    padding: 13px 18px 10px 15px;
+    padding: 18px 18px 15px 15px;
 
 }
 .label mes{
@@ -125,6 +193,74 @@ button[type="submit"]:hover{
 }
 }
 @media screen and (min-width: 764px) and (max-width: 1265px) { 
+/*-------------------------------------------------------*/
+/* Preloader
+/*-------------------------------------------------------*/
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 1001;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #FD940A;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
 /*-------------------------------------------------------*/
 /* Navigation
 /*-------------------------------------------------------*/
@@ -216,7 +352,7 @@ input[type="tel"]{
     margin-top: 10px;
     border-radius: 20px;
     border-color: #F8981C;
-    padding: 13px 18px 10px 15px;
+    padding: 5px 5px 5px 2px;
 }
 input[type="email"]{
     margin-top: -20px;
@@ -264,6 +400,77 @@ button[type="submit"]:hover{
 }
 
 @media screen and (max-width: 763px){
+/*-------------------------------------------------------*/
+/* Preloader
+/*-------------------------------------------------------*/
+body{
+    z-index: 0;
+}
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 1001;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #FD940A;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
 *{
     padding: 0;
     margin: 0;
@@ -451,7 +658,7 @@ input[type="tel"]{
     margin-top: 10px;
     border-radius: 20px;
     border-color: #F8981C;
-    padding: 7px 12px 7px 12px;
+    padding: 4px 5px 2px 5px;
 }
 input[type="email"]{
     margin-top: 10px;
@@ -483,12 +690,10 @@ button[type="submit"]{
     border: none;
     margin-top: 15px;
 }
-footer{
-    margin-top: 30px;
+.f-contact{
     position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    margin-top: 10%;
+    z-index: 0;
 }
 }
 

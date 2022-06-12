@@ -1,15 +1,23 @@
-<?php
-    require_once("header.php");
-?>
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <title class="lang" key="persn-sign-up">JetIKy - Реєстрація</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>window.onload = function () {document.body.classList.add('loaded');}</script>
+    <link rel="icon" href="pictures/logo.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="/css/style for account/styles.css">
-    <meta charset="utf-8">
 </head>
 <body>
+    <div class="preloader">
+  <div class="preloader__row">
+    <div class="preloader__item"></div>
+    <div class="preloader__item"></div>
+  </div>
+</div>
+    <?php
+        require_once("header.php");
+    ?>
 <!-- Блок для виведення повідомлень -->
 <div class="block_for_messages">
     <?php
